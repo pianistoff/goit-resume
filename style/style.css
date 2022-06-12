@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: #E5E5E5;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 1200px;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    background-color: #fff;
+}
+
+.aside {
+    background-color: #1E2939;
+}
