@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #e5e5e5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  margin: 0 auto;
+  width: 1200px;
+  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+  background-color: #fff;
+}
+
+.aside {
+  background-color: #1e2939;
+  width: 370px;
+  color: white;
+}
+
+.photo {
+  width: 370px;
+  height: auto;
+  padding-top: 40px;
+}
+
+.aside-container {
+  margin-left: 40px;
+}
+
+.contacts-container,
+.tech-skills-container {
+  margin-top: 50px;
+}
+
+.aside-title {
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+
+.contacts-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts-letter {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 10px;
+}
+
+.contacts-link {
+  color: white;
+  opacity: 0.5;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.phone-number {
+  text-decoration: none;
+}
+
+.skills-list {
+  list-style: inside;
+  padding: 0;
+}
+
+.skills-item {
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  line-height: 24px;
+}
+
+.soft-skills-container {
+  margin-top: 45px;
+}
+
+.skills-item::marker {
+  color: #FB6D3A;
+  font-size: 14px;
+}

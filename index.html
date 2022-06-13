@@ -5,7 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Resume</title>
-        <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles/styles.css" />
     </head>
     <body>
         <div class="main-container">
@@ -171,48 +177,53 @@
                 <img
                     src="./img/photo.jpg"
                     alt="A photo of a guy in glasses with curly hair."
+                    class="photo"
                 />
-                <div class="contacts-container">
-                    <h2>Contacts</h2>
-                    <ul>
-                        <li>
-                            C:
-                            <a href="tel:+38-(096)-792-2027"
-                                >+38 (096) 792 20 27</a
+                <div class="contacts-container aside-container">
+                    <h2 class="aside-title">Contacts</h2>
+                    <ul class="contacts-list aside-list">
+                        <li class="aside-item">
+                            <span class="contacts-letter">C:</span>
+                            <a
+                                href="tel:+380967922027"
+                                class="contacts-link phone-number"
+                                >+38 096 792 20 27</a
                             >
                         </li>
-                        <li>
-                            E:
-                            <a href="mailto:severyn.h@gmail.com"
+                        <li class="aside-item">
+                            <span class="contacts-letter">E:</span>
+                            <a
+                                href="mailto:severyn.h@gmail.com"
+                                class="contacts-link"
                                 >severyn.h@gmail.com</a
                             >
                         </li>
                     </ul>
                 </div>
-                <div class="tech-skills-container">
-                    <h2>Tech Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>SCSS</li>
-                        <li>Bootstrap</li>
-                        <li>jQuery</li>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Regex</li>
-                        <li>npm</li>
-                        <li>Unix/Linux CLI</li>
-                        <li>Git</li>
+                <div class="tech-skills-container aside-container">
+                    <h2 class="aside-title">Tech Skills</h2>
+                    <ul class="skills-list aside-list">
+                        <li class="skills-item aside-item">HTML</li>
+                        <li class="skills-item aside-item">CSS</li>
+                        <li class="skills-item aside-item">JavaScript</li>
+                        <li class="skills-item aside-item">SCSS</li>
+                        <li class="skills-item aside-item">Bootstrap</li>
+                        <li class="skills-item aside-item">jQuery</li>
+                        <li class="skills-item aside-item">React</li>
+                        <li class="skills-item aside-item">Redux</li>
+                        <li class="skills-item aside-item">Regex</li>
+                        <li class="skills-item aside-item">npm</li>
+                        <li class="skills-item aside-item">Unix/Linux CLI</li>
+                        <li class="skills-item aside-item">Git</li>
                     </ul>
                 </div>
-                <div class="soft-skills-container">
-                    <h2>Soft Skills</h2>
-                    <ul>
-                        <li>Scrum</li>
-                        <li>Agile</li>
-                        <li>GTD</li>
-                        <li>Teamwork</li>
+                <div class="soft-skills-container aside-container">
+                    <h2 class="aside-title">Soft Skills</h2>
+                    <ul class="skills-list aside-list">
+                        <li class="skills-item aside-item">Scrum</li>
+                        <li class="skills-item aside-item">Agile</li>
+                        <li class="skills-item aside-item">GTD</li>
+                        <li class="skills-item aside-item">Teamwork</li>
                     </ul>
                 </div>
             </aside>
