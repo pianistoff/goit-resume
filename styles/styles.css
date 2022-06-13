@@ -1,99 +1,256 @@
 * {
-  margin: 0;
+    margin: 0;
 }
 
 body {
-  background-color: #e5e5e5;
-  font-family: "Montserrat", sans-serif;
+    background-color: #e5e5e5;
+    font-family: "Montserrat", sans-serif;
 }
 
 .main-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  margin: 0 auto;
-  width: 1200px;
-  -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    margin: 0 auto;
+    width: 1200px;
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
 }
 
 .about-container {
-  background-color: #fff;
+    background-color: #fff;
+    padding: 105px 90px;
+}
+
+.info-container {
+    margin-bottom: 45px;
+}
+
+.info-job {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 20px;
+}
+
+.info-name {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    margin-bottom: 25px;
+}
+
+.info-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    width: 400px;
+}
+
+.projects-container {
+    margin-bottom: 45px;
+}
+
+ol.leaders {
+    padding: 0;
+    padding-left: 29px;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+ol.leaders li:before {
+    float: left;
+    width: 0;
+    white-space: nowrap;
+    content: ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . "
+        ". . . . . . . . . . . . . . . . . . . . ";
+}
+
+ol.leaders span:first-child {
+    padding-right: 0.33em;
+    background: white;
+}
+
+ol.leaders span:first-child a {
+    color: #595959;
+    text-decoration: none;
+}
+
+ol.leaders span + span.projects-tech {
+    float: right;
+    padding-left: 0.33em;
+    background: white;
+}
+
+ol.leaders li::marker {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.bracket {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.work-container:nth-of-type(1),
+.work-container:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
+.about-title {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.work-position {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.work-organization {
+    color: #fb6d3a;
+}
+
+.time-and-country {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #a8a8a8;
+    margin-bottom: 10px;
+}
+
+.line {
+    color: black;
+}
+
+.work-experiences-container {
+    margin-bottom: 45px;
+}
+
+.work-list {
+    padding: 0;
+    padding-left: 15px;
+}
+
+.work-list-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.work-list-item::marker {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.education-institution {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #fb6d3a;
+    margin-bottom: 10px;
+}
+
+.education-specialization {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 10px;
 }
 
 .aside {
-  background-color: #1e2939;
-  width: 370px;
-  color: white;
+    background-color: #1e2939;
+    width: 370px;
+    color: white;
 }
 
 .photo {
-  width: 370px;
-  height: auto;
-  padding-top: 40px;
+    width: 370px;
+    height: auto;
+    padding-top: 40px;
 }
 
 .aside-container {
-  margin-left: 40px;
+    margin-left: 40px;
 }
 
 .contacts-container,
 .tech-skills-container {
-  margin-top: 50px;
+    margin-top: 50px;
 }
 
 .aside-title {
-  margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 27px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
 }
 
 .contacts-list {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .contacts-letter {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 24px;
-  padding-right: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    padding-right: 10px;
 }
 
 .contacts-link {
-  color: white;
-  opacity: 0.5;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+    color: white;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .phone-number {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .skills-list {
-  list-style: inside;
-  padding: 0;
+    list-style: inside;
+    padding: 0;
 }
 
 .skills-item {
-  font-weight: 400;
-  font-size: 14px;
-  color: white;
-  line-height: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    color: white;
+    line-height: 24px;
 }
 
 .soft-skills-container {
-  margin-top: 45px;
+    margin-top: 45px;
 }
 
 .skills-item::marker {
-  color: #FB6D3A;
-  font-size: 14px;
+    color: #fb6d3a;
+    font-size: 14px;
 }
